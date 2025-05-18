@@ -1,0 +1,3 @@
+class TrafficUtils:
+    @staticmethod
+    def leblanc(T0, D, C, e, g): ...

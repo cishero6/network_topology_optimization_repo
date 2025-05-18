@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainDialog</class>
+ <widget class="QDialog" name="MainDialog">
+  <property name="windowTitle">
+   <string>QGIS Traffic Plugin</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <item>
+    <widget class="QLabel" name="label_server_ip">
+     <property name="text">
+      <string>Server IP:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="le_server_ip"/>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btn_select_area">
+     <property name="text">
+      <string>Select Area</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btn_select_demand_file">
+     <property name="text">
+      <string>Select File With Demand</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btn_select_traffic_file">
+     <property name="text">
+      <string>Select File With Traffic</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btn_manual">
+     <property name="text">
+      <string>Select Demand/Traffic Manually</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btn_bounds">
+     <property name="text">
+      <string>Select Capacity Limitations</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QFrame" name="frame_requests">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <layout class="QVBoxLayout" name="requestLayout">
+
+      <item>
+       <widget class="QPushButton" name="btn_req_topo_d">
+        <property name="text">
+         <string>Request Topology with Demand</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QPushButton" name="btn_req_topo_t">
+        <property name="text">
+         <string>Request Topology with Traffic</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QPushButton" name="btn_req_traffic">
+        <property name="text">
+         <string>Request Traffic</string>
+        </property>
+       </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
